@@ -1,0 +1,10 @@
+CACHE MANIFEST
+# 2013-12-29:v7
+stylesheets/app.css
+bower_components/modernizr/modernizr.js
+bower_components/jquery/jquery.js
+bower_components/foundation/js/foundation.min.js
+js/app.js
+
+NETWORK:
+*

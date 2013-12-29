@@ -1,0 +1,30 @@
+@import "settings";
+@import "foundation";
+
+#addresses {
+	width: 100%;
+	tr {
+		td {
+			&:last-child{
+				width: 228px;
+			}
+		}
+	}
+	#add_address {
+		width: 100%;
+	}
+	#edit_buttons {
+		display: none;
+		li {
+			width: 50%;
+			display: block;
+			.button {
+				width: 100%;
+			}
+		}
+	}
+	.button,
+	input {
+		margin: 0;
+	}
+}

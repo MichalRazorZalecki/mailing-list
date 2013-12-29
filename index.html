@@ -1,0 +1,63 @@
+<!doctype html>
+<html manifest="cache.appcache" class="no-js" lang="pl_PL">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=640, initial-scale=1.0" />
+        <title>Mailing Lists</title>
+        <link rel="stylesheet" href="stylesheets/app.css" />
+        <script src="bower_components/modernizr/modernizr.js"></script>
+    </head>
+    <body>
+        <div class="row">
+            <header class="large-12 columns">
+                <h1>Mailing List<small> via IndexedDB and AppCache</small></h1>
+                <p>Whole app is <strong>working offline</strong>. You can now disconnect from the Internet and still use this app! Your data are handled by your browser so they are completely safe. You can always see source code on my GitHub profile.</p>
+            </header>
+        </div>
+
+        <div class="row">
+            <div class="large-12 columns">
+                <table id="addresses">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th colspan="2">Email</th>
+                        </tr>                        
+                    </thead>
+                    <tbody>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>
+                                <input type="text" id="new-name" name="new-name" placeholder="Name" />
+                            </td>
+                            <td>
+                                <input type="email" id="new-email" name="new-email" placeholder="Email" />
+                            </td>
+                            <td>
+                                <a href="#" id="add_address" class="button tiny success radius">Add address</a>
+                                <ul id="edit_buttons" class="button-group radius">
+                                    <li><a href="#" id="edit_address" class="button tiny success">Save</a></li>
+                                    <li><a href="#" id="cancel_edit_address" class="button tiny alert">Cancel</a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3"><a href="#" id="send_to_all" class="button tiny success radius">Send To All</a></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+
+        <div class="row">
+            <footer class="large-12 columns">
+                <p><a href="http://michal.zalecki">Michał Załęcki</a> dla <a href="http://webroad.pl">WEBroad.pl</a></p>
+            </footer>
+        </div>
+
+        <script src="bower_components/jquery/jquery.js"></script>
+        <script src="bower_components/foundation/js/foundation.min.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>
