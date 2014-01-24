@@ -65,9 +65,9 @@
 				html += "<td>"+addresses[key].name+"</td>";
 				html += "<td><a href=\"mailto:"+addresses[key].email+"\">"+addresses[key].email+"</a></td>";
 				html += "<td><ul class=\"button-group radius\">";
-					html += "<li><a href=\"#\" class=\"button tiny alert address_delete\" data-key=\""+key+"\">Usuń</button></li>";
-					html += "<li><a href=\"#\" class=\"button tiny secondary address_edit\" data-key=\""+key+"\">Edytuj</button></li>";
-					html += "<li><a href=\"mailto:"+addresses[key].email+"\" class=\"button tiny\">Wyślij</button></li>";
+					html += "<li><a href=\"#\" class=\"button tiny alert address_delete\" data-key=\""+key+"\">Delete</button></li>";
+					html += "<li><a href=\"#\" class=\"button tiny secondary address_edit\" data-key=\""+key+"\">Edit</button></li>";
+					html += "<li><a href=\"mailto:"+addresses[key].email+"\" class=\"button tiny\">Send</button></li>";
 				html += "</ul></td>";
 			html += "</tr>";
 		}
