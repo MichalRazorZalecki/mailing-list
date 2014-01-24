@@ -2,7 +2,7 @@
 <html manifest="cache.appcache" class="no-js" lang="pl_PL">
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=640, initial-scale=1.0" />
+        <meta name="viewport" content="width=480, initial-scale=1.0" />
         <title>Mailing Lists</title>
         <link rel="stylesheet" href="stylesheets/app.css" />
         <script src="bower_components/modernizr/modernizr.js"></script>
@@ -11,7 +11,7 @@
         <div class="row">
             <header class="large-12 columns">
                 <h1>Mailing List<small> via IndexedDB and AppCache</small></h1>
-                <p>Whole app is <strong>working offline</strong>. You can now disconnect from the Internet and still use this app! Your data are handled by your browser so they are completely safe. You can always see source code on my GitHub profile.</p>
+                <p>Whole app is <strong>working offline</strong>. You can now disconnect from the Internet and still use this app! Your data are handled by your browser so they are completely safe. You can always see source code on <a href="https://github.com/MichalRazorZalecki/mailing-list/">my GitHub profile</a>.</p>
             </header>
         </div>
 
@@ -32,7 +32,7 @@
                                 <input type="text" id="new-name" name="new-name" placeholder="Name" />
                             </td>
                             <td>
-                                <input type="email" id="new-email" name="new-email" placeholder="Email" />
+                                <input type="email" id="new-email" name="new-email" placeholder="email@example.com" />
                             </td>
                             <td>
                                 <a href="#" id="add_address" class="button tiny success radius">Add address</a>
@@ -52,8 +52,14 @@
 
         <div class="row">
             <footer class="large-12 columns">
-                <p><a href="http://michal.zalecki">Michał Załęcki</a> dla <a href="http://webroad.pl">WEBroad.pl</a></p>
+                <p><a href="http://michal.zalecki.pl">Michał Załęcki</a> dla <a href="http://webroad.pl">WEBroad.pl</a></p>
             </footer>
+        </div>
+
+        <div id="email_error" class="reveal-modal tiny" data-reveal> 
+            <h2>Emaill Address Error</h2>
+            <p>This email address is invalid. You <strong>must</strong> enter valid email, only name is optional.</p>
+            <a class="close-reveal-modal">&#215;</a>
         </div>
 
         <script src="bower_components/jquery/jquery.js"></script>

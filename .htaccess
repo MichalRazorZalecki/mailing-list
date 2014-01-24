@@ -1,17 +1,3 @@
-<IfModule mod_rewrite.c>
-    Options +FollowSymLinks  
-    RewriteEngine 										On
-      
-    RewriteCond 										%{SCRIPT_FILENAME} !-d  
-    RewriteCond 										%{SCRIPT_FILENAME} !-f  
-      
-    RewriteRule ^contact[/]?$ 							contact.php
-    RewriteRule ^nocache[/]?$ 							nocache.php
-    RewriteRule ^offline[/]?$ 							offline.php
-
-    ErrorDocument 404 /AppCache/404.php
-</IfModule>
-
 <IfModule mod_mime.c>
     AddType text/cache-manifest                         appcache manifest
 </IfModule>
